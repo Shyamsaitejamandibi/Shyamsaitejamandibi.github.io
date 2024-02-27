@@ -25,7 +25,7 @@ const LoginCards: React.FC<Props> = ({
   return (
     <div
       onClick={handleSubmit}
-      className="button-86 pl-10 py-2 md:mx-10 hover:font-semibold rounded-lg "
+      className="button-86 py-2 md:mx-10 hover:font-semibold rounded-lg "
       // className="button-85"
     >
       {" "}
@@ -55,9 +55,9 @@ const LoginCards: React.FC<Props> = ({
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           className="lucide lucide-instagram"
         >
           <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />

@@ -49,7 +49,7 @@ export default function Home() {
         alt="Logo"
         width={1920}
         height={1080}
-        className="h-[124vh] md:h-screen w-full object-cover"
+        className="h-[110vh] md:h-screen w-full object-cover"
         style={{ objectPosition: "50% 30%" }}
       />
       <div className="flex justify-center">

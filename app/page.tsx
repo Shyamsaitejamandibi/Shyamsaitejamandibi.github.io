@@ -1,21 +1,25 @@
-import { Mail, PhoneIcon, Code, Link } from "lucide-react";
-import "./App.css";
-import Navbar from "./components/Navbar";
-import LoginCards from "./components/logincards";
+"use client";
+import Hero from "@/components/Ani";
+import Navbar from "@/components/Navbar";
+import Share from "@/components/Share";
+import LoginCards from "@/components/logincards";
+import { Button } from "@/components/ui/button";
 import {
   Dialog,
   DialogClose,
   DialogContent,
+  DialogDescription,
   DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-} from "./components/ui/dialog";
-import { Separator } from "./components/ui/separator";
-import { Button } from "./components/ui/button";
-import Share from "./components/Share";
+} from "@/components/ui/dialog";
+import { Separator } from "@/components/ui/separator";
+import { Code, Mail, PhoneIcon } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
-function App() {
+export default function Home() {
   const manifesto = () => {
     window.open(
       "https://drive.google.com/file/d/1kpKiFDOFnVnvkY5vkyf78Qd8yJlXxQoK/view?usp=drivesdk"
@@ -40,7 +44,7 @@ function App() {
   return (
     <>
       {/* <Hero /> */}
-      <img
+      <Image
         src="/image/akhil.jpg"
         alt="Logo"
         width={1920}
@@ -53,7 +57,7 @@ function App() {
           <Navbar />
           <div className="border-t-2 border-gray-300 my-3 mx-5"></div>
           <div className="flex justify-center items-center">
-            <img
+            <Image
               src="/image/akhil.jpg"
               alt="Left Logo"
               width={200}
@@ -109,14 +113,14 @@ function App() {
                     <div className="pb-4">Contact details</div>
                     <Separator />
                     {/* <div className="text-3xl justify-center font-semibold">
-                  Akhil Marni
-                </div> */}
+                    Akhil Marni
+                  </div> */}
                   </DialogTitle>
                 </DialogHeader>
                 <div className="card">
                   <div className="top">
                     <h2 className="name">Akhil</h2>
-                    <img
+                    <Image
                       src="/image/akhil.jpg"
                       alt="Logo"
                       width={30}
@@ -172,8 +176,32 @@ function App() {
           </div>
         </div>
       </div>
+      {/* <div className="flex justify-center">
+        <div className="absolute top-0 w-full">
+          <div className="relative">
+            <video
+              autoPlay
+              muted
+              loop
+              className="-rotate-45 h-64 w-64 object-cover"
+            >
+              <source src="/blackhole.webm" type="video/webm" />
+            </video>
+          </div>
+        </div>
+      </div> */}
+      {/* <div className="flex justify-end absolute top-0 right-0 w-full">
+        <div className="relative">
+          <video
+            autoPlay
+            muted
+            loop
+            className="rotate-70 h-32 w-32 object-cover"
+          >
+            <source src="/blackhole.webm" type="video/webm" />
+          </video>
+        </div>
+      </div> */}
     </>
   );
 }
-
-export default App;

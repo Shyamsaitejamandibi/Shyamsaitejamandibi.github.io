@@ -53,7 +53,7 @@ export default function Home() {
         style={{ objectPosition: "50% 30%" }}
       />
       <div className="flex justify-center">
-        <div className="absolute px-4 pt-3 max-w-5xl bg-white border-2 rounded-xl top-0 z-50 w-full border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/50">
+        <div className="absolute pt-3 max-w-5xl bg-white border-2 rounded-xl top-0 z-50 w-full border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/50">
           <Navbar />
           <div className="border-t-2 border-gray-300 my-3 mx-5"></div>
           <div className="flex justify-center items-center">
@@ -70,31 +70,26 @@ export default function Home() {
               number={1}
               description="Manifesto"
               handleSubmit={manifesto}
-              className="pr-28"
             />
             <LoginCards
               number={2}
               description="Feasibility Report"
               handleSubmit={feasibilityReport}
-              className="pr-20"
             />
             <LoginCards
               number={3}
               description="Manifesto Video"
               handleSubmit={manifestoVideo}
-              className="pr-20"
             />
             <LoginCards
               number={4}
               description="Whatsapp Group"
               handleSubmit={whatsappGroup}
-              className="pr-20"
             />
             <LoginCards
               number={5}
               description="Instagram Handle"
               handleSubmit={instagramHandle}
-              className="pr-20"
             />
 
             <Dialog>

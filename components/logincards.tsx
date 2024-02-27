@@ -25,8 +25,10 @@ const LoginCards: React.FC<Props> = ({
   return (
     <div
       onClick={handleSubmit}
-      className="button-86 py-2 md:mx-10 hover:font-semibold rounded-lg "
-      // className="button-85"
+      className={cn(
+        "button-86 py-2 md:mx-10 hover:font-semibold rounded-lg ",
+        className
+      )}
     >
       {" "}
       {number === 1 && <ClipboardIcon className="w-30 h-30" />}
@@ -66,9 +68,7 @@ const LoginCards: React.FC<Props> = ({
         </svg>
       )}
       {number === 6 && <User className="w-30 h-30" />}
-      <p className={cn("text-white font-customFont", className)}>
-        {description}
-      </p>
+      <p className={"text-white font-customFont pl-10"}>{description}</p>
     </div>
   );
 };
